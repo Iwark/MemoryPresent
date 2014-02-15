@@ -23,7 +23,6 @@
 		970EDAC418AF20E50018D549 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 970EDAC218AF20E50018D549 /* InfoPlist.strings */; };
 		970EDAC618AF20E50018D549 /* MemoryPresentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 970EDAC518AF20E50018D549 /* MemoryPresentTests.m */; };
 		970EDAD018AF21010018D549 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 970EDACF18AF21010018D549 /* CoreImage.framework */; };
-		970EDADE18AFAAC30018D549 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 970EDADD18AFAAC30018D549 /* opencv2.framework */; };
 		970EDAE318AFAB400018D549 /* FaceDetector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 970EDAE018AFAB400018D549 /* FaceDetector.mm */; };
 		970EDAE418AFAB400018D549 /* CustomFaceRecognizer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 970EDAE218AFAB400018D549 /* CustomFaceRecognizer.mm */; };
 		970EDAE818AFAB5F0018D549 /* OpenCVData.mm in Sources */ = {isa = PBXBuildFile; fileRef = 970EDAE618AFAB5F0018D549 /* OpenCVData.mm */; };
@@ -41,6 +40,7 @@
 		970EDB0718AFB63E0018D549 /* Const.m in Sources */ = {isa = PBXBuildFile; fileRef = 970EDB0618AFB63E0018D549 /* Const.m */; };
 		970EDB0A18AFB73C0018D549 /* MovieListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 970EDB0918AFB73C0018D549 /* MovieListView.m */; };
 		97503D5818AFBB6B00EC0ABF /* AddMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97503D5718AFBB6B00EC0ABF /* AddMovieViewController.m */; };
+		97503D5A18AFD9BE00EC0ABF /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97503D5918AFD9BE00EC0ABF /* opencv2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,7 +74,6 @@
 		970EDAC318AF20E50018D549 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		970EDAC518AF20E50018D549 /* MemoryPresentTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryPresentTests.m; sourceTree = "<group>"; };
 		970EDACF18AF21010018D549 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
-		970EDADD18AFAAC30018D549 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 		970EDADF18AFAB400018D549 /* FaceDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceDetector.h; sourceTree = "<group>"; };
 		970EDAE018AFAB400018D549 /* FaceDetector.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FaceDetector.mm; sourceTree = "<group>"; };
 		970EDAE118AFAB400018D549 /* CustomFaceRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomFaceRecognizer.h; sourceTree = "<group>"; };
@@ -103,6 +102,7 @@
 		970EDB0918AFB73C0018D549 /* MovieListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieListView.m; sourceTree = "<group>"; };
 		97503D5618AFBB6B00EC0ABF /* AddMovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddMovieViewController.h; sourceTree = "<group>"; };
 		97503D5718AFBB6B00EC0ABF /* AddMovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddMovieViewController.m; sourceTree = "<group>"; };
+		97503D5918AFD9BE00EC0ABF /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 		D94130787FC946478D1A2F6F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,12 +116,12 @@
 				970EDAFD18AFB50B0018D549 /* libsqlite3.dylib in Frameworks */,
 				970EDAFB18AFB5010018D549 /* QuartzCore.framework in Frameworks */,
 				970EDAF918AFB4F10018D549 /* AssetsLibrary.framework in Frameworks */,
-				970EDADE18AFAAC30018D549 /* opencv2.framework in Frameworks */,
 				970EDAD018AF21010018D549 /* CoreImage.framework in Frameworks */,
 				970EDA9A18AF20E50018D549 /* CoreGraphics.framework in Frameworks */,
 				970EDA9C18AF20E50018D549 /* UIKit.framework in Frameworks */,
 				970EDA9818AF20E50018D549 /* Foundation.framework in Frameworks */,
 				42E5D014CB4B43379B140F23 /* libPods.a in Frameworks */,
+				97503D5A18AFD9BE00EC0ABF /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,9 +164,9 @@
 				970EDB0018AFB54E0018D549 /* CoreMedia.framework */,
 				970EDAFE18AFB5130018D549 /* AVFoundation.framework */,
 				970EDAFC18AFB50B0018D549 /* libsqlite3.dylib */,
+				97503D5918AFD9BE00EC0ABF /* opencv2.framework */,
 				970EDAFA18AFB5010018D549 /* QuartzCore.framework */,
 				970EDAF818AFB4F10018D549 /* AssetsLibrary.framework */,
-				970EDADD18AFAAC30018D549 /* opencv2.framework */,
 				970EDACF18AF21010018D549 /* CoreImage.framework */,
 				970EDA9718AF20E50018D549 /* Foundation.framework */,
 				970EDA9918AF20E50018D549 /* CoreGraphics.framework */,
