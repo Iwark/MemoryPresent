@@ -186,10 +186,19 @@
                                               NSError *error
                                               ) {
                               /* handle the result */
-                              NSLog(@"result = %@",result);
-                              
+                              //NSLog(@"result = %@",result);
+                              int i = 0;
+                              NSMutableArray *fileURLs = NSMutableArray.new;
+                              NSMutableArray *images = NSMutableArray.new;
+                              UIImage *image;
                               for (NSDictionary *data in [result objectForKey:@"data"]) {
-                                  NSLog(@"sourceURL = %@", [data objectForKey:@"source"]);
+                                  //NSLog(@"sourceURL = %@", [data objectForKey:@"source"]);
+                                  fileURLs[i] = [NSURL URLWithString:[data objectForKey:@"source"]];
+                                  NSData *urlData = [NSData dataWithContentsOfURL:[NSURL URLWithString:fileURLs[i]]];
+                                  image = [UIImage imageWithData:urlData];
+                                  images[i] = image;
+                                  //NSLog(@"%@", fileURLs[i]);
+                                  i++;
                               }
                               
                           }];
