@@ -1,0 +1,668 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		42E5D014CB4B43379B140F23 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 741CCB1DB8714081951D7873 /* libPods.a */; };
+		970EDA9818AF20E50018D549 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 970EDA9718AF20E50018D549 /* Foundation.framework */; };
+		970EDA9A18AF20E50018D549 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 970EDA9918AF20E50018D549 /* CoreGraphics.framework */; };
+		970EDA9C18AF20E50018D549 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 970EDA9B18AF20E50018D549 /* UIKit.framework */; };
+		970EDAA218AF20E50018D549 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 970EDAA018AF20E50018D549 /* InfoPlist.strings */; };
+		970EDAA418AF20E50018D549 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 970EDAA318AF20E50018D549 /* main.m */; };
+		970EDAA818AF20E50018D549 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 970EDAA718AF20E50018D549 /* AppDelegate.m */; };
+		970EDAAB18AF20E50018D549 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 970EDAA918AF20E50018D549 /* Main_iPhone.storyboard */; };
+		970EDAAE18AF20E50018D549 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 970EDAAC18AF20E50018D549 /* Main_iPad.storyboard */; };
+		970EDAB318AF20E50018D549 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 970EDAB218AF20E50018D549 /* Images.xcassets */; };
+		970EDABA18AF20E50018D549 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 970EDAB918AF20E50018D549 /* XCTest.framework */; };
+		970EDABB18AF20E50018D549 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 970EDA9718AF20E50018D549 /* Foundation.framework */; };
+		970EDABC18AF20E50018D549 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 970EDA9B18AF20E50018D549 /* UIKit.framework */; };
+		970EDAC418AF20E50018D549 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 970EDAC218AF20E50018D549 /* InfoPlist.strings */; };
+		970EDAC618AF20E50018D549 /* MemoryPresentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 970EDAC518AF20E50018D549 /* MemoryPresentTests.m */; };
+		970EDAD018AF21010018D549 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 970EDACF18AF21010018D549 /* CoreImage.framework */; };
+		970EDADE18AFAAC30018D549 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 970EDADD18AFAAC30018D549 /* opencv2.framework */; };
+		970EDAE318AFAB400018D549 /* FaceDetector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 970EDAE018AFAB400018D549 /* FaceDetector.mm */; };
+		970EDAE418AFAB400018D549 /* CustomFaceRecognizer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 970EDAE218AFAB400018D549 /* CustomFaceRecognizer.mm */; };
+		970EDAE818AFAB5F0018D549 /* OpenCVData.mm in Sources */ = {isa = PBXBuildFile; fileRef = 970EDAE618AFAB5F0018D549 /* OpenCVData.mm */; };
+		970EDAE918AFAB5F0018D549 /* haarcascade_frontalface_alt2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 970EDAE718AFAB5F0018D549 /* haarcascade_frontalface_alt2.xml */; };
+		970EDAF218AFABAA0018D549 /* RecognizeViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 970EDAEB18AFABAA0018D549 /* RecognizeViewController.mm */; };
+		970EDAF318AFABAA0018D549 /* PeopleViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 970EDAED18AFABAA0018D549 /* PeopleViewController.mm */; };
+		970EDAF418AFABAA0018D549 /* NewPersonViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 970EDAEF18AFABAA0018D549 /* NewPersonViewController.mm */; };
+		970EDAF518AFABAA0018D549 /* CaptureImagesViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 970EDAF118AFABAA0018D549 /* CaptureImagesViewController.mm */; };
+		970EDAF918AFB4F10018D549 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 970EDAF818AFB4F10018D549 /* AssetsLibrary.framework */; };
+		970EDAFB18AFB5010018D549 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 970EDAFA18AFB5010018D549 /* QuartzCore.framework */; };
+		970EDAFD18AFB50B0018D549 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 970EDAFC18AFB50B0018D549 /* libsqlite3.dylib */; };
+		970EDAFF18AFB5130018D549 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 970EDAFE18AFB5130018D549 /* AVFoundation.framework */; };
+		970EDB0118AFB54E0018D549 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 970EDB0018AFB54E0018D549 /* CoreMedia.framework */; };
+		970EDB0418AFB5F90018D549 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 970EDB0318AFB5F90018D549 /* ViewController.m */; };
+		970EDB0718AFB63E0018D549 /* Const.m in Sources */ = {isa = PBXBuildFile; fileRef = 970EDB0618AFB63E0018D549 /* Const.m */; };
+		970EDB0A18AFB73C0018D549 /* MovieListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 970EDB0918AFB73C0018D549 /* MovieListView.m */; };
+		97503D5818AFBB6B00EC0ABF /* AddMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97503D5718AFBB6B00EC0ABF /* AddMovieViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		970EDABD18AF20E50018D549 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 970EDA8C18AF20E50018D549 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 970EDA9318AF20E50018D549;
+			remoteInfo = MemoryPresent;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		741CCB1DB8714081951D7873 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		970EDA9418AF20E50018D549 /* MemoryPresent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoryPresent.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		970EDA9718AF20E50018D549 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		970EDA9918AF20E50018D549 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		970EDA9B18AF20E50018D549 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		970EDA9F18AF20E50018D549 /* MemoryPresent-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MemoryPresent-Info.plist"; sourceTree = "<group>"; };
+		970EDAA118AF20E50018D549 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		970EDAA318AF20E50018D549 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		970EDAA518AF20E50018D549 /* MemoryPresent-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MemoryPresent-Prefix.pch"; sourceTree = "<group>"; };
+		970EDAA618AF20E50018D549 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		970EDAA718AF20E50018D549 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		970EDAAA18AF20E50018D549 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		970EDAAD18AF20E50018D549 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		970EDAB218AF20E50018D549 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		970EDAB818AF20E50018D549 /* MemoryPresentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemoryPresentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		970EDAB918AF20E50018D549 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		970EDAC118AF20E50018D549 /* MemoryPresentTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MemoryPresentTests-Info.plist"; sourceTree = "<group>"; };
+		970EDAC318AF20E50018D549 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		970EDAC518AF20E50018D549 /* MemoryPresentTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryPresentTests.m; sourceTree = "<group>"; };
+		970EDACF18AF21010018D549 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		970EDADD18AFAAC30018D549 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		970EDADF18AFAB400018D549 /* FaceDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceDetector.h; sourceTree = "<group>"; };
+		970EDAE018AFAB400018D549 /* FaceDetector.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FaceDetector.mm; sourceTree = "<group>"; };
+		970EDAE118AFAB400018D549 /* CustomFaceRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomFaceRecognizer.h; sourceTree = "<group>"; };
+		970EDAE218AFAB400018D549 /* CustomFaceRecognizer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CustomFaceRecognizer.mm; sourceTree = "<group>"; };
+		970EDAE518AFAB5F0018D549 /* OpenCVData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenCVData.h; sourceTree = "<group>"; };
+		970EDAE618AFAB5F0018D549 /* OpenCVData.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVData.mm; sourceTree = "<group>"; };
+		970EDAE718AFAB5F0018D549 /* haarcascade_frontalface_alt2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = haarcascade_frontalface_alt2.xml; path = libs/haarcascade_frontalface_alt2.xml; sourceTree = "<group>"; };
+		970EDAEA18AFABAA0018D549 /* RecognizeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecognizeViewController.h; sourceTree = "<group>"; };
+		970EDAEB18AFABAA0018D549 /* RecognizeViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RecognizeViewController.mm; sourceTree = "<group>"; };
+		970EDAEC18AFABAA0018D549 /* PeopleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeopleViewController.h; sourceTree = "<group>"; };
+		970EDAED18AFABAA0018D549 /* PeopleViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PeopleViewController.mm; sourceTree = "<group>"; };
+		970EDAEE18AFABAA0018D549 /* NewPersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewPersonViewController.h; sourceTree = "<group>"; };
+		970EDAEF18AFABAA0018D549 /* NewPersonViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NewPersonViewController.mm; sourceTree = "<group>"; };
+		970EDAF018AFABAA0018D549 /* CaptureImagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptureImagesViewController.h; sourceTree = "<group>"; };
+		970EDAF118AFABAA0018D549 /* CaptureImagesViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CaptureImagesViewController.mm; sourceTree = "<group>"; };
+		970EDAF818AFB4F10018D549 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		970EDAFA18AFB5010018D549 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		970EDAFC18AFB50B0018D549 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		970EDAFE18AFB5130018D549 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		970EDB0018AFB54E0018D549 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		970EDB0218AFB5F90018D549 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		970EDB0318AFB5F90018D549 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		970EDB0518AFB63E0018D549 /* Const.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Const.h; sourceTree = "<group>"; };
+		970EDB0618AFB63E0018D549 /* Const.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Const.m; sourceTree = "<group>"; };
+		970EDB0818AFB73C0018D549 /* MovieListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieListView.h; sourceTree = "<group>"; };
+		970EDB0918AFB73C0018D549 /* MovieListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieListView.m; sourceTree = "<group>"; };
+		97503D5618AFBB6B00EC0ABF /* AddMovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddMovieViewController.h; sourceTree = "<group>"; };
+		97503D5718AFBB6B00EC0ABF /* AddMovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddMovieViewController.m; sourceTree = "<group>"; };
+		D94130787FC946478D1A2F6F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		970EDA9118AF20E50018D549 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				970EDB0118AFB54E0018D549 /* CoreMedia.framework in Frameworks */,
+				970EDAFF18AFB5130018D549 /* AVFoundation.framework in Frameworks */,
+				970EDAFD18AFB50B0018D549 /* libsqlite3.dylib in Frameworks */,
+				970EDAFB18AFB5010018D549 /* QuartzCore.framework in Frameworks */,
+				970EDAF918AFB4F10018D549 /* AssetsLibrary.framework in Frameworks */,
+				970EDADE18AFAAC30018D549 /* opencv2.framework in Frameworks */,
+				970EDAD018AF21010018D549 /* CoreImage.framework in Frameworks */,
+				970EDA9A18AF20E50018D549 /* CoreGraphics.framework in Frameworks */,
+				970EDA9C18AF20E50018D549 /* UIKit.framework in Frameworks */,
+				970EDA9818AF20E50018D549 /* Foundation.framework in Frameworks */,
+				42E5D014CB4B43379B140F23 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		970EDAB518AF20E50018D549 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				970EDABA18AF20E50018D549 /* XCTest.framework in Frameworks */,
+				970EDABC18AF20E50018D549 /* UIKit.framework in Frameworks */,
+				970EDABB18AF20E50018D549 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		970EDA8B18AF20E50018D549 = {
+			isa = PBXGroup;
+			children = (
+				970EDA9D18AF20E50018D549 /* MemoryPresent */,
+				970EDABF18AF20E50018D549 /* MemoryPresentTests */,
+				970EDA9618AF20E50018D549 /* Frameworks */,
+				970EDA9518AF20E50018D549 /* Products */,
+				D94130787FC946478D1A2F6F /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		970EDA9518AF20E50018D549 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				970EDA9418AF20E50018D549 /* MemoryPresent.app */,
+				970EDAB818AF20E50018D549 /* MemoryPresentTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		970EDA9618AF20E50018D549 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				970EDB0018AFB54E0018D549 /* CoreMedia.framework */,
+				970EDAFE18AFB5130018D549 /* AVFoundation.framework */,
+				970EDAFC18AFB50B0018D549 /* libsqlite3.dylib */,
+				970EDAFA18AFB5010018D549 /* QuartzCore.framework */,
+				970EDAF818AFB4F10018D549 /* AssetsLibrary.framework */,
+				970EDADD18AFAAC30018D549 /* opencv2.framework */,
+				970EDACF18AF21010018D549 /* CoreImage.framework */,
+				970EDA9718AF20E50018D549 /* Foundation.framework */,
+				970EDA9918AF20E50018D549 /* CoreGraphics.framework */,
+				970EDA9B18AF20E50018D549 /* UIKit.framework */,
+				970EDAB918AF20E50018D549 /* XCTest.framework */,
+				741CCB1DB8714081951D7873 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		970EDA9D18AF20E50018D549 /* MemoryPresent */ = {
+			isa = PBXGroup;
+			children = (
+				970EDAA618AF20E50018D549 /* AppDelegate.h */,
+				970EDAA718AF20E50018D549 /* AppDelegate.m */,
+				970EDB0518AFB63E0018D549 /* Const.h */,
+				970EDB0618AFB63E0018D549 /* Const.m */,
+				970EDADC18AFAA900018D549 /* libs */,
+				970EDAF718AFAC0F0018D549 /* views */,
+				970EDAD118AF25F50018D549 /* controllers */,
+				970EDAD518AF260A0018D549 /* images */,
+				970EDA9E18AF20E50018D549 /* Supporting Files */,
+				970EDAB218AF20E50018D549 /* Images.xcassets */,
+			);
+			path = MemoryPresent;
+			sourceTree = "<group>";
+		};
+		970EDA9E18AF20E50018D549 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				970EDAE718AFAB5F0018D549 /* haarcascade_frontalface_alt2.xml */,
+				970EDA9F18AF20E50018D549 /* MemoryPresent-Info.plist */,
+				970EDAA018AF20E50018D549 /* InfoPlist.strings */,
+				970EDAA318AF20E50018D549 /* main.m */,
+				970EDAA518AF20E50018D549 /* MemoryPresent-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		970EDABF18AF20E50018D549 /* MemoryPresentTests */ = {
+			isa = PBXGroup;
+			children = (
+				970EDAC518AF20E50018D549 /* MemoryPresentTests.m */,
+				970EDAC018AF20E50018D549 /* Supporting Files */,
+			);
+			path = MemoryPresentTests;
+			sourceTree = "<group>";
+		};
+		970EDAC018AF20E50018D549 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				970EDAC118AF20E50018D549 /* MemoryPresentTests-Info.plist */,
+				970EDAC218AF20E50018D549 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		970EDAD118AF25F50018D549 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				970EDB0218AFB5F90018D549 /* ViewController.h */,
+				970EDB0318AFB5F90018D549 /* ViewController.m */,
+				97503D5618AFBB6B00EC0ABF /* AddMovieViewController.h */,
+				97503D5718AFBB6B00EC0ABF /* AddMovieViewController.m */,
+				970EDAEA18AFABAA0018D549 /* RecognizeViewController.h */,
+				970EDAEB18AFABAA0018D549 /* RecognizeViewController.mm */,
+				970EDAEC18AFABAA0018D549 /* PeopleViewController.h */,
+				970EDAED18AFABAA0018D549 /* PeopleViewController.mm */,
+				970EDAEE18AFABAA0018D549 /* NewPersonViewController.h */,
+				970EDAEF18AFABAA0018D549 /* NewPersonViewController.mm */,
+				970EDAF018AFABAA0018D549 /* CaptureImagesViewController.h */,
+				970EDAF118AFABAA0018D549 /* CaptureImagesViewController.mm */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		970EDAD518AF260A0018D549 /* images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		970EDADC18AFAA900018D549 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				970EDAE518AFAB5F0018D549 /* OpenCVData.h */,
+				970EDAE618AFAB5F0018D549 /* OpenCVData.mm */,
+				970EDADF18AFAB400018D549 /* FaceDetector.h */,
+				970EDAE018AFAB400018D549 /* FaceDetector.mm */,
+				970EDAE118AFAB400018D549 /* CustomFaceRecognizer.h */,
+				970EDAE218AFAB400018D549 /* CustomFaceRecognizer.mm */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		970EDAF718AFAC0F0018D549 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				970EDAA918AF20E50018D549 /* Main_iPhone.storyboard */,
+				970EDAAC18AF20E50018D549 /* Main_iPad.storyboard */,
+				970EDB0818AFB73C0018D549 /* MovieListView.h */,
+				970EDB0918AFB73C0018D549 /* MovieListView.m */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		970EDA9318AF20E50018D549 /* MemoryPresent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 970EDAC918AF20E50018D549 /* Build configuration list for PBXNativeTarget "MemoryPresent" */;
+			buildPhases = (
+				96967ABA63FE4D5FA0811DE0 /* Check Pods Manifest.lock */,
+				970EDA9018AF20E50018D549 /* Sources */,
+				970EDA9118AF20E50018D549 /* Frameworks */,
+				970EDA9218AF20E50018D549 /* Resources */,
+				BC74C79B416F488E94FCFB13 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MemoryPresent;
+			productName = MemoryPresent;
+			productReference = 970EDA9418AF20E50018D549 /* MemoryPresent.app */;
+			productType = "com.apple.product-type.application";
+		};
+		970EDAB718AF20E50018D549 /* MemoryPresentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 970EDACC18AF20E50018D549 /* Build configuration list for PBXNativeTarget "MemoryPresentTests" */;
+			buildPhases = (
+				970EDAB418AF20E50018D549 /* Sources */,
+				970EDAB518AF20E50018D549 /* Frameworks */,
+				970EDAB618AF20E50018D549 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				970EDABE18AF20E50018D549 /* PBXTargetDependency */,
+			);
+			name = MemoryPresentTests;
+			productName = MemoryPresentTests;
+			productReference = 970EDAB818AF20E50018D549 /* MemoryPresentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		970EDA8C18AF20E50018D549 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Kohei Iwasaki";
+				TargetAttributes = {
+					970EDAB718AF20E50018D549 = {
+						TestTargetID = 970EDA9318AF20E50018D549;
+					};
+				};
+			};
+			buildConfigurationList = 970EDA8F18AF20E50018D549 /* Build configuration list for PBXProject "MemoryPresent" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 970EDA8B18AF20E50018D549;
+			productRefGroup = 970EDA9518AF20E50018D549 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				970EDA9318AF20E50018D549 /* MemoryPresent */,
+				970EDAB718AF20E50018D549 /* MemoryPresentTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		970EDA9218AF20E50018D549 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				970EDAAE18AF20E50018D549 /* Main_iPad.storyboard in Resources */,
+				970EDAE918AFAB5F0018D549 /* haarcascade_frontalface_alt2.xml in Resources */,
+				970EDAB318AF20E50018D549 /* Images.xcassets in Resources */,
+				970EDAAB18AF20E50018D549 /* Main_iPhone.storyboard in Resources */,
+				970EDAA218AF20E50018D549 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		970EDAB618AF20E50018D549 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				970EDAC418AF20E50018D549 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		96967ABA63FE4D5FA0811DE0 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BC74C79B416F488E94FCFB13 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		970EDA9018AF20E50018D549 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				970EDAE318AFAB400018D549 /* FaceDetector.mm in Sources */,
+				970EDAE818AFAB5F0018D549 /* OpenCVData.mm in Sources */,
+				970EDAF318AFABAA0018D549 /* PeopleViewController.mm in Sources */,
+				970EDAE418AFAB400018D549 /* CustomFaceRecognizer.mm in Sources */,
+				970EDB0418AFB5F90018D549 /* ViewController.m in Sources */,
+				970EDB0718AFB63E0018D549 /* Const.m in Sources */,
+				97503D5818AFBB6B00EC0ABF /* AddMovieViewController.m in Sources */,
+				970EDAA818AF20E50018D549 /* AppDelegate.m in Sources */,
+				970EDAA418AF20E50018D549 /* main.m in Sources */,
+				970EDAF518AFABAA0018D549 /* CaptureImagesViewController.mm in Sources */,
+				970EDB0A18AFB73C0018D549 /* MovieListView.m in Sources */,
+				970EDAF218AFABAA0018D549 /* RecognizeViewController.mm in Sources */,
+				970EDAF418AFABAA0018D549 /* NewPersonViewController.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		970EDAB418AF20E50018D549 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				970EDAC618AF20E50018D549 /* MemoryPresentTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		970EDABE18AF20E50018D549 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 970EDA9318AF20E50018D549 /* MemoryPresent */;
+			targetProxy = 970EDABD18AF20E50018D549 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		970EDAA018AF20E50018D549 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				970EDAA118AF20E50018D549 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		970EDAA918AF20E50018D549 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				970EDAAA18AF20E50018D549 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		970EDAAC18AF20E50018D549 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				970EDAAD18AF20E50018D549 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		970EDAC218AF20E50018D549 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				970EDAC318AF20E50018D549 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		970EDAC718AF20E50018D549 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		970EDAC818AF20E50018D549 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		970EDACA18AF20E50018D549 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D94130787FC946478D1A2F6F /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/iwasakikouhei/MemoryPresent,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MemoryPresent/MemoryPresent-Prefix.pch";
+				INFOPLIST_FILE = "MemoryPresent/MemoryPresent-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		970EDACB18AF20E50018D549 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D94130787FC946478D1A2F6F /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/iwasakikouhei/MemoryPresent,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MemoryPresent/MemoryPresent-Prefix.pch";
+				INFOPLIST_FILE = "MemoryPresent/MemoryPresent-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		970EDACD18AF20E50018D549 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MemoryPresent.app/MemoryPresent";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MemoryPresent/MemoryPresent-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MemoryPresentTests/MemoryPresentTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		970EDACE18AF20E50018D549 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MemoryPresent.app/MemoryPresent";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MemoryPresent/MemoryPresent-Prefix.pch";
+				INFOPLIST_FILE = "MemoryPresentTests/MemoryPresentTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		970EDA8F18AF20E50018D549 /* Build configuration list for PBXProject "MemoryPresent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				970EDAC718AF20E50018D549 /* Debug */,
+				970EDAC818AF20E50018D549 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		970EDAC918AF20E50018D549 /* Build configuration list for PBXNativeTarget "MemoryPresent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				970EDACA18AF20E50018D549 /* Debug */,
+				970EDACB18AF20E50018D549 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		970EDACC18AF20E50018D549 /* Build configuration list for PBXNativeTarget "MemoryPresentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				970EDACD18AF20E50018D549 /* Debug */,
+				970EDACE18AF20E50018D549 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 970EDA8C18AF20E50018D549 /* Project object */;
+}
