@@ -98,11 +98,12 @@
 {
     for (id<FBGraphUser> user in friendPickerController.selection) {
         NSLog(@"Friend selected: %@", user.name);
-        //friendNameLabel.text = user.name;
         
         [self getUserPhotos:user];
         //[user id], [user birthday]
         
+        friendNameLabel.text = user.name;
+        pictureView.profileID = user.id;
     }
     
     [self handlePickerDone];

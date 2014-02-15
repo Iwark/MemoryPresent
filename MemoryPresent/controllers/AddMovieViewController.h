@@ -11,7 +11,8 @@
 
 @interface AddMovieViewController : UIViewController <FBFriendPickerDelegate,  UISearchBarDelegate>{
     
-    //IBOutlet UILabel *friendNameLabel;
+    IBOutlet UILabel *friendNameLabel;
+    IBOutlet FBProfilePictureView *pictureView;
     
     //facebok SDK
     FBFriendPickerViewController *friendPickerController;

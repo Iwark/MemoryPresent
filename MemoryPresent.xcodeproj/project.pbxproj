@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		42E5D014CB4B43379B140F23 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 741CCB1DB8714081951D7873 /* libPods.a */; };
+		4A55666C18AFF10000795317 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A55666B18AFF10000795317 /* opencv2.framework */; };
 		970EDA9818AF20E50018D549 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 970EDA9718AF20E50018D549 /* Foundation.framework */; };
 		970EDA9A18AF20E50018D549 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 970EDA9918AF20E50018D549 /* CoreGraphics.framework */; };
 		970EDA9C18AF20E50018D549 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 970EDA9B18AF20E50018D549 /* UIKit.framework */; };
@@ -40,7 +41,6 @@
 		970EDB0718AFB63E0018D549 /* Const.m in Sources */ = {isa = PBXBuildFile; fileRef = 970EDB0618AFB63E0018D549 /* Const.m */; };
 		970EDB0A18AFB73C0018D549 /* MovieListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 970EDB0918AFB73C0018D549 /* MovieListView.m */; };
 		97503D5818AFBB6B00EC0ABF /* AddMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97503D5718AFBB6B00EC0ABF /* AddMovieViewController.m */; };
-		97503D5B18AFEBAE00EC0ABF /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97503D5918AFD9BE00EC0ABF /* opencv2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +54,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4A55666B18AFF10000795317 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 		741CCB1DB8714081951D7873 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		970EDA9418AF20E50018D549 /* MemoryPresent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoryPresent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		970EDA9718AF20E50018D549 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -102,7 +103,6 @@
 		970EDB0918AFB73C0018D549 /* MovieListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieListView.m; sourceTree = "<group>"; };
 		97503D5618AFBB6B00EC0ABF /* AddMovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddMovieViewController.h; sourceTree = "<group>"; };
 		97503D5718AFBB6B00EC0ABF /* AddMovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddMovieViewController.m; sourceTree = "<group>"; };
-		97503D5918AFD9BE00EC0ABF /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 		D94130787FC946478D1A2F6F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,7 +111,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97503D5B18AFEBAE00EC0ABF /* opencv2.framework in Frameworks */,
 				970EDB0118AFB54E0018D549 /* CoreMedia.framework in Frameworks */,
 				970EDAFF18AFB5130018D549 /* AVFoundation.framework in Frameworks */,
 				970EDAFD18AFB50B0018D549 /* libsqlite3.dylib in Frameworks */,
@@ -122,6 +121,7 @@
 				970EDA9C18AF20E50018D549 /* UIKit.framework in Frameworks */,
 				970EDA9818AF20E50018D549 /* Foundation.framework in Frameworks */,
 				42E5D014CB4B43379B140F23 /* libPods.a in Frameworks */,
+				4A55666C18AFF10000795317 /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,10 +161,10 @@
 		970EDA9618AF20E50018D549 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4A55666B18AFF10000795317 /* opencv2.framework */,
 				970EDB0018AFB54E0018D549 /* CoreMedia.framework */,
 				970EDAFE18AFB5130018D549 /* AVFoundation.framework */,
 				970EDAFC18AFB50B0018D549 /* libsqlite3.dylib */,
-				97503D5918AFD9BE00EC0ABF /* opencv2.framework */,
 				970EDAFA18AFB5010018D549 /* QuartzCore.framework */,
 				970EDAF818AFB4F10018D549 /* AssetsLibrary.framework */,
 				970EDACF18AF21010018D549 /* CoreImage.framework */,
@@ -563,6 +563,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/iwasakikouhei/MemoryPresent,
+					/Users/Ken_Tominaga/Desktop/MemoryPresent,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MemoryPresent/MemoryPresent-Prefix.pch";
@@ -581,6 +582,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/iwasakikouhei/MemoryPresent,
+					/Users/Ken_Tominaga/Desktop/MemoryPresent,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MemoryPresent/MemoryPresent-Prefix.pch";
