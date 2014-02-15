@@ -1,14 +1,17 @@
 PODS:
+  - Facebook-iOS-SDK (3.12.0)
   - MGBox2 (2.0.0)
   - SVProgressHUD (1.0)
   - WSAssetPickerController (0.2.0)
 
 DEPENDENCIES:
+  - Facebook-iOS-SDK
   - MGBox2
   - SVProgressHUD
   - WSAssetPickerController
 
 SPEC CHECKSUMS:
+  Facebook-iOS-SDK: c09f7d80db5c48170ff834bc03ebe774c49d1f5b
   MGBox2: 7c09e36c2271f9af16fdb5141a0ca554ecee4d8d
   SVProgressHUD: 5e10939a296debf5fe5a5895eda9539b8b2114f1
   WSAssetPickerController: cd57ba0f59d0d4265fa618036a40afa288ff3699

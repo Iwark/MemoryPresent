@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <FacebookSDK/FacebookSDK.h>
+#import "FacebookSDK.h"
 
 @interface AddMovieViewController : UIViewController <FBFriendPickerDelegate,  UISearchBarDelegate>{
     

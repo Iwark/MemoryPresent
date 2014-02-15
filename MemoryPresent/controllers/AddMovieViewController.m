@@ -77,6 +77,7 @@
     [self presentViewController:friendPickerController
                        animated:YES
                      completion:^(void){
+                         [SVProgressHUD dismiss];
                          [self addSearchBarToFriendPickerView];
                      }
      ];
@@ -184,7 +185,7 @@
                                               NSError *error
                                               ) {
                               /* handle the result */
-                              //NSLog(@"result = %@",result);
+                              NSLog(@"result = %@",result);
                               
                               for (NSDictionary *data in [result objectForKey:@"data"]) {
                                   NSLog(@"sourceURL = %@", [data objectForKey:@"source"]);

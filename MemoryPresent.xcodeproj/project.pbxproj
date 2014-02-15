@@ -40,7 +40,7 @@
 		970EDB0718AFB63E0018D549 /* Const.m in Sources */ = {isa = PBXBuildFile; fileRef = 970EDB0618AFB63E0018D549 /* Const.m */; };
 		970EDB0A18AFB73C0018D549 /* MovieListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 970EDB0918AFB73C0018D549 /* MovieListView.m */; };
 		97503D5818AFBB6B00EC0ABF /* AddMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97503D5718AFBB6B00EC0ABF /* AddMovieViewController.m */; };
-		97503D5A18AFD9BE00EC0ABF /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97503D5918AFD9BE00EC0ABF /* opencv2.framework */; };
+		97503D5B18AFEBAE00EC0ABF /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97503D5918AFD9BE00EC0ABF /* opencv2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97503D5B18AFEBAE00EC0ABF /* opencv2.framework in Frameworks */,
 				970EDB0118AFB54E0018D549 /* CoreMedia.framework in Frameworks */,
 				970EDAFF18AFB5130018D549 /* AVFoundation.framework in Frameworks */,
 				970EDAFD18AFB50B0018D549 /* libsqlite3.dylib in Frameworks */,
@@ -121,7 +122,6 @@
 				970EDA9C18AF20E50018D549 /* UIKit.framework in Frameworks */,
 				970EDA9818AF20E50018D549 /* Foundation.framework in Frameworks */,
 				42E5D014CB4B43379B140F23 /* libPods.a in Frameworks */,
-				97503D5A18AFD9BE00EC0ABF /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
