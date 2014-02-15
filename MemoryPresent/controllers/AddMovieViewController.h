@@ -7,7 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <FacebookSDK/FacebookSDK.h>
 
-@interface AddMovieViewController : UIViewController
+@interface AddMovieViewController : UIViewController <FBFriendPickerDelegate,  UISearchBarDelegate>{
+    
+    //IBOutlet UILabel *friendNameLabel;
+    
+    //facebok SDK
+    FBFriendPickerViewController *friendPickerController;
+    UISearchBar *friendSearchBar;
+    NSString *searchText;
+}
 
 @end

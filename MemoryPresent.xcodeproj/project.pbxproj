@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		42E5D014CB4B43379B140F23 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 741CCB1DB8714081951D7873 /* libPods.a */; };
+		4A1B7AEC18AFDA2E00017AE7 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A1B7AEB18AFDA2E00017AE7 /* opencv2.framework */; };
+		4A1B7AEE18AFDDCF00017AE7 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A1B7AED18AFDDCF00017AE7 /* FacebookSDK.framework */; };
 		970EDA9818AF20E50018D549 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 970EDA9718AF20E50018D549 /* Foundation.framework */; };
 		970EDA9A18AF20E50018D549 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 970EDA9918AF20E50018D549 /* CoreGraphics.framework */; };
 		970EDA9C18AF20E50018D549 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 970EDA9B18AF20E50018D549 /* UIKit.framework */; };
@@ -23,7 +25,6 @@
 		970EDAC418AF20E50018D549 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 970EDAC218AF20E50018D549 /* InfoPlist.strings */; };
 		970EDAC618AF20E50018D549 /* MemoryPresentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 970EDAC518AF20E50018D549 /* MemoryPresentTests.m */; };
 		970EDAD018AF21010018D549 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 970EDACF18AF21010018D549 /* CoreImage.framework */; };
-		970EDADE18AFAAC30018D549 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 970EDADD18AFAAC30018D549 /* opencv2.framework */; };
 		970EDAE318AFAB400018D549 /* FaceDetector.mm in Sources */ = {isa = PBXBuildFile; fileRef = 970EDAE018AFAB400018D549 /* FaceDetector.mm */; };
 		970EDAE418AFAB400018D549 /* CustomFaceRecognizer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 970EDAE218AFAB400018D549 /* CustomFaceRecognizer.mm */; };
 		970EDAE818AFAB5F0018D549 /* OpenCVData.mm in Sources */ = {isa = PBXBuildFile; fileRef = 970EDAE618AFAB5F0018D549 /* OpenCVData.mm */; };
@@ -54,6 +55,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4A1B7AEB18AFDA2E00017AE7 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		4A1B7AED18AFDDCF00017AE7 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		741CCB1DB8714081951D7873 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		970EDA9418AF20E50018D549 /* MemoryPresent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoryPresent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		970EDA9718AF20E50018D549 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -74,7 +77,6 @@
 		970EDAC318AF20E50018D549 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		970EDAC518AF20E50018D549 /* MemoryPresentTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemoryPresentTests.m; sourceTree = "<group>"; };
 		970EDACF18AF21010018D549 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
-		970EDADD18AFAAC30018D549 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 		970EDADF18AFAB400018D549 /* FaceDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FaceDetector.h; sourceTree = "<group>"; };
 		970EDAE018AFAB400018D549 /* FaceDetector.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FaceDetector.mm; sourceTree = "<group>"; };
 		970EDAE118AFAB400018D549 /* CustomFaceRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomFaceRecognizer.h; sourceTree = "<group>"; };
@@ -116,12 +118,13 @@
 				970EDAFD18AFB50B0018D549 /* libsqlite3.dylib in Frameworks */,
 				970EDAFB18AFB5010018D549 /* QuartzCore.framework in Frameworks */,
 				970EDAF918AFB4F10018D549 /* AssetsLibrary.framework in Frameworks */,
-				970EDADE18AFAAC30018D549 /* opencv2.framework in Frameworks */,
+				4A1B7AEE18AFDDCF00017AE7 /* FacebookSDK.framework in Frameworks */,
 				970EDAD018AF21010018D549 /* CoreImage.framework in Frameworks */,
 				970EDA9A18AF20E50018D549 /* CoreGraphics.framework in Frameworks */,
 				970EDA9C18AF20E50018D549 /* UIKit.framework in Frameworks */,
 				970EDA9818AF20E50018D549 /* Foundation.framework in Frameworks */,
 				42E5D014CB4B43379B140F23 /* libPods.a in Frameworks */,
+				4A1B7AEC18AFDA2E00017AE7 /* opencv2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,12 +164,13 @@
 		970EDA9618AF20E50018D549 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4A1B7AED18AFDDCF00017AE7 /* FacebookSDK.framework */,
 				970EDB0018AFB54E0018D549 /* CoreMedia.framework */,
 				970EDAFE18AFB5130018D549 /* AVFoundation.framework */,
 				970EDAFC18AFB50B0018D549 /* libsqlite3.dylib */,
+				4A1B7AEB18AFDA2E00017AE7 /* opencv2.framework */,
 				970EDAFA18AFB5010018D549 /* QuartzCore.framework */,
 				970EDAF818AFB4F10018D549 /* AssetsLibrary.framework */,
-				970EDADD18AFAAC30018D549 /* opencv2.framework */,
 				970EDACF18AF21010018D549 /* CoreImage.framework */,
 				970EDA9718AF20E50018D549 /* Foundation.framework */,
 				970EDA9918AF20E50018D549 /* CoreGraphics.framework */,
@@ -562,7 +566,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/iwasakikouhei/MemoryPresent,
+					/Users/Ken_Tominaga/Desktop/MemoryPresent,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MemoryPresent/MemoryPresent-Prefix.pch";
@@ -580,7 +584,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					/Users/iwasakikouhei/MemoryPresent,
+					/Users/Ken_Tominaga/Desktop/MemoryPresent,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MemoryPresent/MemoryPresent-Prefix.pch";
