@@ -8,13 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		3131017118B057B100CD07D7 /* EditMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = 3131017018B057B100CD07D7 /* EditMovie.m */; };
-		3131018118B05B1D00CD07D7 /* way2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3131018018B05B1D00CD07D7 /* way2.png */; };
-		3131018318B05B2600CD07D7 /* cake1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3131018218B05B2600CD07D7 /* cake1.png */; };
-		3131018518B05B3100CD07D7 /* hat.png in Resources */ = {isa = PBXBuildFile; fileRef = 3131018418B05B3100CD07D7 /* hat.png */; };
-		3131018718B05B3900CD07D7 /* cupcake.png in Resources */ = {isa = PBXBuildFile; fileRef = 3131018618B05B3900CD07D7 /* cupcake.png */; };
-		3131018918B05B4D00CD07D7 /* balloon1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3131018818B05B4D00CD07D7 /* balloon1.png */; };
-		3131018B18B05B5900CD07D7 /* happybday.png in Resources */ = {isa = PBXBuildFile; fileRef = 3131018A18B05B5900CD07D7 /* happybday.png */; };
-		3131018D18B05B6100CD07D7 /* presentbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 3131018C18B05B6100CD07D7 /* presentbox.png */; };
+		313101A418B05CE300CD07D7 /* balloon1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3131019D18B05CE300CD07D7 /* balloon1.png */; };
+		313101A518B05CE300CD07D7 /* cake1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3131019E18B05CE300CD07D7 /* cake1.png */; };
+		313101A618B05CE300CD07D7 /* cupcake.png in Resources */ = {isa = PBXBuildFile; fileRef = 3131019F18B05CE300CD07D7 /* cupcake.png */; };
+		313101A718B05CE300CD07D7 /* happybday.png in Resources */ = {isa = PBXBuildFile; fileRef = 313101A018B05CE300CD07D7 /* happybday.png */; };
+		313101A818B05CE300CD07D7 /* hat.png in Resources */ = {isa = PBXBuildFile; fileRef = 313101A118B05CE300CD07D7 /* hat.png */; };
+		313101A918B05CE300CD07D7 /* presentbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 313101A218B05CE300CD07D7 /* presentbox.png */; };
+		313101AA18B05CE300CD07D7 /* way2.png in Resources */ = {isa = PBXBuildFile; fileRef = 313101A318B05CE300CD07D7 /* way2.png */; };
 		42E5D014CB4B43379B140F23 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 741CCB1DB8714081951D7873 /* libPods.a */; };
 		4A55666C18AFF10000795317 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A55666B18AFF10000795317 /* opencv2.framework */; };
 		970EDA9818AF20E50018D549 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 970EDA9718AF20E50018D549 /* Foundation.framework */; };
@@ -66,13 +66,13 @@
 /* Begin PBXFileReference section */
 		3131016F18B057B100CD07D7 /* EditMovie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditMovie.h; sourceTree = "<group>"; };
 		3131017018B057B100CD07D7 /* EditMovie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditMovie.m; sourceTree = "<group>"; };
-		3131018018B05B1D00CD07D7 /* way2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = way2.png; path = ../../../iPhoneApp/EditMovie/EditMovie/way2.png; sourceTree = "<group>"; };
-		3131018218B05B2600CD07D7 /* cake1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cake1.png; path = ../../../iPhoneApp/EditMovie/EditMovie/cake1.png; sourceTree = "<group>"; };
-		3131018418B05B3100CD07D7 /* hat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hat.png; path = ../../../iPhoneApp/EditMovie/EditMovie/hat.png; sourceTree = "<group>"; };
-		3131018618B05B3900CD07D7 /* cupcake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cupcake.png; path = ../../../iPhoneApp/EditMovie/EditMovie/cupcake.png; sourceTree = "<group>"; };
-		3131018818B05B4D00CD07D7 /* balloon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = balloon1.png; path = ../../../iPhoneApp/EditMovie/EditMovie/balloon1.png; sourceTree = "<group>"; };
-		3131018A18B05B5900CD07D7 /* happybday.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = happybday.png; path = ../../../iPhoneApp/EditMovie/EditMovie/happybday.png; sourceTree = "<group>"; };
-		3131018C18B05B6100CD07D7 /* presentbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = presentbox.png; path = ../../../iPhoneApp/EditMovie/EditMovie/presentbox.png; sourceTree = "<group>"; };
+		3131019D18B05CE300CD07D7 /* balloon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = balloon1.png; sourceTree = "<group>"; };
+		3131019E18B05CE300CD07D7 /* cake1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cake1.png; sourceTree = "<group>"; };
+		3131019F18B05CE300CD07D7 /* cupcake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cupcake.png; sourceTree = "<group>"; };
+		313101A018B05CE300CD07D7 /* happybday.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = happybday.png; sourceTree = "<group>"; };
+		313101A118B05CE300CD07D7 /* hat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hat.png; sourceTree = "<group>"; };
+		313101A218B05CE300CD07D7 /* presentbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = presentbox.png; sourceTree = "<group>"; };
+		313101A318B05CE300CD07D7 /* way2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = way2.png; sourceTree = "<group>"; };
 		4A55666B18AFF10000795317 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 		741CCB1DB8714081951D7873 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		970EDA9418AF20E50018D549 /* MemoryPresent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoryPresent.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -161,6 +161,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3131019C18B05CE300CD07D7 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				3131019D18B05CE300CD07D7 /* balloon1.png */,
+				3131019E18B05CE300CD07D7 /* cake1.png */,
+				3131019F18B05CE300CD07D7 /* cupcake.png */,
+				313101A018B05CE300CD07D7 /* happybday.png */,
+				313101A118B05CE300CD07D7 /* hat.png */,
+				313101A218B05CE300CD07D7 /* presentbox.png */,
+				313101A318B05CE300CD07D7 /* way2.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		970EDA8B18AF20E50018D549 = {
 			isa = PBXGroup;
 			children = (
@@ -209,8 +223,8 @@
 				970EDB0618AFB63E0018D549 /* Const.m */,
 				970EDADC18AFAA900018D549 /* libs */,
 				970EDAF718AFAC0F0018D549 /* views */,
+				3131019C18B05CE300CD07D7 /* images */,
 				970EDAD118AF25F50018D549 /* controllers */,
-				970EDAD518AF260A0018D549 /* images */,
 				970EDA9E18AF20E50018D549 /* Supporting Files */,
 				970EDAB218AF20E50018D549 /* Images.xcassets */,
 			);
@@ -266,20 +280,6 @@
 				970EDAF118AFABAA0018D549 /* CaptureImagesViewController.mm */,
 			);
 			path = controllers;
-			sourceTree = "<group>";
-		};
-		970EDAD518AF260A0018D549 /* images */ = {
-			isa = PBXGroup;
-			children = (
-				3131018418B05B3100CD07D7 /* hat.png */,
-				3131018818B05B4D00CD07D7 /* balloon1.png */,
-				3131018618B05B3900CD07D7 /* cupcake.png */,
-				3131018C18B05B6100CD07D7 /* presentbox.png */,
-				3131018A18B05B5900CD07D7 /* happybday.png */,
-				3131018218B05B2600CD07D7 /* cake1.png */,
-				3131018018B05B1D00CD07D7 /* way2.png */,
-			);
-			path = images;
 			sourceTree = "<group>";
 		};
 		970EDADC18AFAA900018D549 /* libs */ = {
@@ -388,18 +388,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3131018318B05B2600CD07D7 /* cake1.png in Resources */,
-				3131018918B05B4D00CD07D7 /* balloon1.png in Resources */,
+				313101A518B05CE300CD07D7 /* cake1.png in Resources */,
 				970EDAAE18AF20E50018D549 /* Main_iPad.storyboard in Resources */,
+				313101AA18B05CE300CD07D7 /* way2.png in Resources */,
+				313101A618B05CE300CD07D7 /* cupcake.png in Resources */,
+				313101A418B05CE300CD07D7 /* balloon1.png in Resources */,
 				970EDAE918AFAB5F0018D549 /* haarcascade_frontalface_alt2.xml in Resources */,
-				3131018118B05B1D00CD07D7 /* way2.png in Resources */,
+				313101A818B05CE300CD07D7 /* hat.png in Resources */,
+				313101A718B05CE300CD07D7 /* happybday.png in Resources */,
+				313101A918B05CE300CD07D7 /* presentbox.png in Resources */,
 				970EDAB318AF20E50018D549 /* Images.xcassets in Resources */,
 				970EDAAB18AF20E50018D549 /* Main_iPhone.storyboard in Resources */,
-				3131018D18B05B6100CD07D7 /* presentbox.png in Resources */,
 				970EDAA218AF20E50018D549 /* InfoPlist.strings in Resources */,
-				3131018B18B05B5900CD07D7 /* happybday.png in Resources */,
-				3131018718B05B3900CD07D7 /* cupcake.png in Resources */,
-				3131018518B05B3100CD07D7 /* hat.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
