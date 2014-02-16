@@ -15,10 +15,6 @@ const float kRecordingFPS = 60.0f;
     self = [super init];
     if (self) {
         //初期化
-        NSString *str = [[NSBundle mainBundle] pathForResource:@"nano" ofType:@"mov"];
-        NSURL *url = [NSURL fileURLWithPath:str];
-        NSLog(@"%@ %@",str,url);
-        [self compositeMovieFromUrl:url];
     }
     
     return self;

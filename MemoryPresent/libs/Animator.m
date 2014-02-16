@@ -12,7 +12,7 @@
 
 @implementation Animator
 
-- (IBAction)createVideo:(NSMutableArray *) imageArray{
+- (NSURL *)createVideo:(NSMutableArray *) imageArray{
 
     ///////////// setup OR function def if we move this to a separate function ////////////
     // this should be moved to its own function, that can take an imageArray, videoOutputPath, etc...
@@ -94,9 +94,9 @@
     //convert uiimage to CGImage.
     int frameCount = 0;
     int numberOfImage = imageArray.count;
-    double numberOfSecondsPerFrame = (60.0/numberOfImage);
+    double numberOfSecondsPerFrame = (94.0/numberOfImage);
     NSLog(@"size of array: %d",numberOfImage);
-    NSLog(@"30/size= %f", (60.0/numberOfImage));
+    NSLog(@"30/size= %f", (94.0/numberOfImage));
     double frameDuration = fps * numberOfSecondsPerFrame;
     
     //for(VideoFrame * frm in imageArray)
@@ -119,7 +119,7 @@
         
         BOOL append_ok = NO;
         int j = 0;
-        while (!append_ok && j < 60) {
+        while (!append_ok && j < 94) {
             if (adaptor.assetWriterInput.readyForMoreMediaData)  {
                 //print out status:
                 NSLog(@"Processing video frame (%d,%d)",frameCount,[imageArray count]);
@@ -201,12 +201,12 @@
      ];
     
     ///// THAT IS IT DONE... the final video file will be written here...
-    NSLog(@"DONE.....outputFilePath--->%@", outputFilePath);
+    NSLog(@"DONE.....outputFilePath--->%@", outputFileUrl);
     
     // the final video file will be located somewhere like here:
     // /Users/caferrara/Library/Application Support/iPhone Simulator/6.0/Applications/D4B12FEE-E09C-4B12-B772-7F1BD6011BE1/Documents/outputFile.mov
     
-    
+    return outputFileUrl;
     ////////////////////////////////////////////////////////////////////////////
     ////////////////////////////////////////////////////////////////////////////
     

@@ -14,4 +14,6 @@
 @interface EditMovie : NSObject
 @property (nonatomic,strong) AVAssetExportSession *assetExport;
 
+- (void)compositeMovieFromUrl:(NSURL *)outputFileURL;
+
 @end

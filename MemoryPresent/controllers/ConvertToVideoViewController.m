@@ -8,6 +8,7 @@
 
 #import "ConvertToVideoViewController.h"
 #import "Animator.h"
+#import "EditMovie.h"
 
 @interface ConvertToVideoViewController ()
 
@@ -30,7 +31,10 @@
 	// Do any additional setup after loading the view.
     
     Animator *animator = [[Animator alloc] init];
-    [animator createVideo:[_images mutableCopy]];
+    NSURL *url = [animator createVideo:[_images mutableCopy]];
+    NSLog(@"%@",url);
+    EditMovie *editMovie = [[EditMovie alloc] init];
+    [editMovie compositeMovieFromUrl:url];
     
 }
 

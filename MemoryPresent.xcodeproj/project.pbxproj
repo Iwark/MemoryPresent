@@ -43,6 +43,7 @@
 		97503D6A18B0555800EC0ABF /* Animator.m in Sources */ = {isa = PBXBuildFile; fileRef = 97503D6918B0555800EC0ABF /* Animator.m */; };
 		97503D6D18B0562E00EC0ABF /* UIImage+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = 97503D6C18B0562E00EC0ABF /* UIImage+Extras.m */; };
 		97503D6F18B056C100EC0ABF /* birthday.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 97503D6E18B056C100EC0ABF /* birthday.mp3 */; };
+		97503D7218B0591300EC0ABF /* EditMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = 97503D7118B0591300EC0ABF /* EditMovie.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +109,8 @@
 		97503D6B18B0562E00EC0ABF /* UIImage+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extras.h"; sourceTree = "<group>"; };
 		97503D6C18B0562E00EC0ABF /* UIImage+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extras.m"; sourceTree = "<group>"; };
 		97503D6E18B056C100EC0ABF /* birthday.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = birthday.mp3; sourceTree = "<group>"; };
+		97503D7018B0591300EC0ABF /* EditMovie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditMovie.h; sourceTree = "<group>"; };
+		97503D7118B0591300EC0ABF /* EditMovie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditMovie.m; sourceTree = "<group>"; };
 		D94130787FC946478D1A2F6F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -263,6 +266,8 @@
 				970EDAE218AFAB400018D549 /* CustomFaceRecognizer.mm */,
 				97503D6818B0555800EC0ABF /* Animator.h */,
 				97503D6918B0555800EC0ABF /* Animator.m */,
+				97503D7018B0591300EC0ABF /* EditMovie.h */,
+				97503D7118B0591300EC0ABF /* EditMovie.m */,
 				97503D6B18B0562E00EC0ABF /* UIImage+Extras.h */,
 				97503D6C18B0562E00EC0ABF /* UIImage+Extras.m */,
 			);
@@ -422,6 +427,7 @@
 				970EDAE818AFAB5F0018D549 /* OpenCVData.mm in Sources */,
 				97503D6718B0530E00EC0ABF /* ConvertToVideoViewController.m in Sources */,
 				97503D6118B0235E00EC0ABF /* PictureListView.m in Sources */,
+				97503D7218B0591300EC0ABF /* EditMovie.m in Sources */,
 				970EDAE418AFAB400018D549 /* CustomFaceRecognizer.mm in Sources */,
 				970EDB0418AFB5F90018D549 /* ViewController.m in Sources */,
 				97503D6A18B0555800EC0ABF /* Animator.m in Sources */,

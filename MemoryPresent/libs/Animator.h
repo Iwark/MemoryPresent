@@ -14,6 +14,6 @@
 #import <QuartzCore/QuartzCore.h>
 
 @interface Animator : NSObject
-- (IBAction)createVideo:(NSMutableArray *) imageArray;
+- (NSURL *)createVideo:(NSMutableArray *) imageArray;
 
 @end
