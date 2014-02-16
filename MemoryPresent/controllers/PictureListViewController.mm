@@ -8,6 +8,8 @@
 
 #import "PictureListViewController.h"
 #import "PictureListView.h"
+#import "ConvertToVideoViewController.h"
+
 @interface PictureListViewController ()
 {
     IBOutlet PictureListView *plv;
@@ -138,6 +140,12 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    ConvertToVideoViewController *ctvvc = segue.destinationViewController;
+    ctvvc.images = plv.images;
 }
 
 @end

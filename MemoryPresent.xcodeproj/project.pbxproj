@@ -28,10 +28,6 @@
 		970EDAE418AFAB400018D549 /* CustomFaceRecognizer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 970EDAE218AFAB400018D549 /* CustomFaceRecognizer.mm */; };
 		970EDAE818AFAB5F0018D549 /* OpenCVData.mm in Sources */ = {isa = PBXBuildFile; fileRef = 970EDAE618AFAB5F0018D549 /* OpenCVData.mm */; };
 		970EDAE918AFAB5F0018D549 /* haarcascade_frontalface_alt2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 970EDAE718AFAB5F0018D549 /* haarcascade_frontalface_alt2.xml */; };
-		970EDAF218AFABAA0018D549 /* RecognizeViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 970EDAEB18AFABAA0018D549 /* RecognizeViewController.mm */; };
-		970EDAF318AFABAA0018D549 /* PeopleViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 970EDAED18AFABAA0018D549 /* PeopleViewController.mm */; };
-		970EDAF418AFABAA0018D549 /* NewPersonViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 970EDAEF18AFABAA0018D549 /* NewPersonViewController.mm */; };
-		970EDAF518AFABAA0018D549 /* CaptureImagesViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 970EDAF118AFABAA0018D549 /* CaptureImagesViewController.mm */; };
 		970EDAF918AFB4F10018D549 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 970EDAF818AFB4F10018D549 /* AssetsLibrary.framework */; };
 		970EDAFB18AFB5010018D549 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 970EDAFA18AFB5010018D549 /* QuartzCore.framework */; };
 		970EDAFD18AFB50B0018D549 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 970EDAFC18AFB50B0018D549 /* libsqlite3.dylib */; };
@@ -43,6 +39,7 @@
 		97503D5818AFBB6B00EC0ABF /* AddMovieViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 97503D5718AFBB6B00EC0ABF /* AddMovieViewController.mm */; };
 		97503D6118B0235E00EC0ABF /* PictureListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97503D6018B0235E00EC0ABF /* PictureListView.m */; };
 		97503D6418B0257A00EC0ABF /* PictureListViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 97503D6318B0257A00EC0ABF /* PictureListViewController.mm */; };
+		97503D6718B0530E00EC0ABF /* ConvertToVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97503D6618B0530E00EC0ABF /* ConvertToVideoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,14 +81,6 @@
 		970EDAE518AFAB5F0018D549 /* OpenCVData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenCVData.h; sourceTree = "<group>"; };
 		970EDAE618AFAB5F0018D549 /* OpenCVData.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVData.mm; sourceTree = "<group>"; };
 		970EDAE718AFAB5F0018D549 /* haarcascade_frontalface_alt2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = haarcascade_frontalface_alt2.xml; path = libs/haarcascade_frontalface_alt2.xml; sourceTree = "<group>"; };
-		970EDAEA18AFABAA0018D549 /* RecognizeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecognizeViewController.h; sourceTree = "<group>"; };
-		970EDAEB18AFABAA0018D549 /* RecognizeViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = RecognizeViewController.mm; sourceTree = "<group>"; };
-		970EDAEC18AFABAA0018D549 /* PeopleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeopleViewController.h; sourceTree = "<group>"; };
-		970EDAED18AFABAA0018D549 /* PeopleViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PeopleViewController.mm; sourceTree = "<group>"; };
-		970EDAEE18AFABAA0018D549 /* NewPersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewPersonViewController.h; sourceTree = "<group>"; };
-		970EDAEF18AFABAA0018D549 /* NewPersonViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NewPersonViewController.mm; sourceTree = "<group>"; };
-		970EDAF018AFABAA0018D549 /* CaptureImagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptureImagesViewController.h; sourceTree = "<group>"; };
-		970EDAF118AFABAA0018D549 /* CaptureImagesViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CaptureImagesViewController.mm; sourceTree = "<group>"; };
 		970EDAF818AFB4F10018D549 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		970EDAFA18AFB5010018D549 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		970EDAFC18AFB50B0018D549 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
@@ -109,6 +98,8 @@
 		97503D6018B0235E00EC0ABF /* PictureListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureListView.m; sourceTree = "<group>"; };
 		97503D6218B0257A00EC0ABF /* PictureListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureListViewController.h; sourceTree = "<group>"; };
 		97503D6318B0257A00EC0ABF /* PictureListViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PictureListViewController.mm; sourceTree = "<group>"; };
+		97503D6518B0530E00EC0ABF /* ConvertToVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConvertToVideoViewController.h; sourceTree = "<group>"; };
+		97503D6618B0530E00EC0ABF /* ConvertToVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConvertToVideoViewController.m; sourceTree = "<group>"; };
 		D94130787FC946478D1A2F6F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -239,14 +230,8 @@
 				97503D5718AFBB6B00EC0ABF /* AddMovieViewController.mm */,
 				97503D6218B0257A00EC0ABF /* PictureListViewController.h */,
 				97503D6318B0257A00EC0ABF /* PictureListViewController.mm */,
-				970EDAEA18AFABAA0018D549 /* RecognizeViewController.h */,
-				970EDAEB18AFABAA0018D549 /* RecognizeViewController.mm */,
-				970EDAEC18AFABAA0018D549 /* PeopleViewController.h */,
-				970EDAED18AFABAA0018D549 /* PeopleViewController.mm */,
-				970EDAEE18AFABAA0018D549 /* NewPersonViewController.h */,
-				970EDAEF18AFABAA0018D549 /* NewPersonViewController.mm */,
-				970EDAF018AFABAA0018D549 /* CaptureImagesViewController.h */,
-				970EDAF118AFABAA0018D549 /* CaptureImagesViewController.mm */,
+				97503D6518B0530E00EC0ABF /* ConvertToVideoViewController.h */,
+				97503D6618B0530E00EC0ABF /* ConvertToVideoViewController.m */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -421,7 +406,7 @@
 				97503D6418B0257A00EC0ABF /* PictureListViewController.mm in Sources */,
 				970EDAE318AFAB400018D549 /* FaceDetector.mm in Sources */,
 				970EDAE818AFAB5F0018D549 /* OpenCVData.mm in Sources */,
-				970EDAF318AFABAA0018D549 /* PeopleViewController.mm in Sources */,
+				97503D6718B0530E00EC0ABF /* ConvertToVideoViewController.m in Sources */,
 				97503D6118B0235E00EC0ABF /* PictureListView.m in Sources */,
 				970EDAE418AFAB400018D549 /* CustomFaceRecognizer.mm in Sources */,
 				970EDB0418AFB5F90018D549 /* ViewController.m in Sources */,
@@ -429,10 +414,7 @@
 				97503D5818AFBB6B00EC0ABF /* AddMovieViewController.mm in Sources */,
 				970EDAA818AF20E50018D549 /* AppDelegate.m in Sources */,
 				970EDAA418AF20E50018D549 /* main.m in Sources */,
-				970EDAF518AFABAA0018D549 /* CaptureImagesViewController.mm in Sources */,
 				970EDB0A18AFB73C0018D549 /* MovieListView.m in Sources */,
-				970EDAF218AFABAA0018D549 /* RecognizeViewController.mm in Sources */,
-				970EDAF418AFABAA0018D549 /* NewPersonViewController.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
