@@ -8,7 +8,7 @@
 
 #import "Animator.h"
 #import "UIImage+Extras.h"
-
+#import <AssetsLibrary/AssetsLibrary.h>
 
 @implementation Animator
 
@@ -197,6 +197,25 @@
     [_assetExport exportAsynchronouslyWithCompletionHandler:
      ^(void ) {
          //[self saveVideoToAlbum:outputFilePath];
+         
+         // 端末に保存
+         ALAssetsLibrary *library = [[ALAssetsLibrary alloc] init];
+         if ([library videoAtPathIsCompatibleWithSavedPhotosAlbum:outputFileUrl])
+         {
+             [library writeVideoAtPathToSavedPhotosAlbum:outputFileUrl
+                                         completionBlock:^(NSURL *assetURL, NSError *assetError)
+              {
+                  if (assetError) {
+                      NSLog(@"error: %@",assetError);
+                  }else{
+                      NSLog(@"success: %@",assetURL);
+                      [SVProgressHUD showSuccessWithStatus:@"保存しました"];
+                  }
+              }];
+         }else{
+             NSLog(@"aaa");
+         }
+
      }
      ];
     

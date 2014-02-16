@@ -28,33 +28,18 @@ const float kRecordingFPS = 60.0f;
     // 動画URLからアセットを生成
     AVURLAsset *videoAsset = [[AVURLAsset alloc] initWithURL:outputFileURL options:nil];
     
-    // 音楽のアセット
-    //NSString *str = [[NSBundle mainBundle] pathForResource:@"EDBorn_to_beFULL" ofType:@"mp3"];
-    //NSURL *url = [NSURL fileURLWithPath:str];
-    //AVURLAsset *audioAsset = [[AVURLAsset alloc] initWithURL:url options:nil];
-    
     // コンポジション作成
     AVMutableComposition* mixComposition = [AVMutableComposition composition];
     AVMutableCompositionTrack *compositionVideoTrack =
     [mixComposition addMutableTrackWithMediaType:AVMediaTypeVideo
                                 preferredTrackID:kCMPersistentTrackID_Invalid];
     
-    //音楽のコンポジション
-    //AVMutableCompositionTrack *compositionMusicTrack = [mixComposition addMutableTrackWithMediaType:AVMediaTypeAudio preferredTrackID:kCMPersistentTrackID_Invalid];
-    
     // アセットからトラックを取得
     AVAssetTrack *videoTrack = [[videoAsset tracksWithMediaType:AVMediaTypeVideo] objectAtIndex:0];
-    
-    // 音楽のトラック
-    //AVAssetTrack *audioTrack = [[audioAsset tracksWithMediaType:AVMediaTypeAudio] objectAtIndex:0];
     
     // コンポジションの設定
     [compositionVideoTrack insertTimeRange:CMTimeRangeMake(kCMTimeZero, videoAsset.duration) ofTrack:videoTrack atTime:kCMTimeZero error:nil];
     [compositionVideoTrack setPreferredTransform:[[[videoAsset tracksWithMediaType:AVMediaTypeVideo] objectAtIndex:0] preferredTransform]];
-    
-    // 音楽の設定
-    //[compositionMusicTrack insertTimeRange:CMTimeRangeMake(kCMTimeZero, audioAsset.duration) ofTrack:audioTrack atTime:kCMTimeZero error:nil];
-    //[compositionMusicTrack setPreferredTransform:[[[audioAsset tracksWithMediaType:AVMediaTypeAudio] objectAtIndex:0] preferredTransform]];
     
     //***** 2. 合成したいテキストやイラストをCALayerで作成して、合成用コンポジションを生成。*****//
     
@@ -121,32 +106,15 @@ const float kRecordingFPS = 60.0f;
     logoLayer7.contents = (__bridge id)(happy7.CGImage);
     logoLayer7.frame = CGRectMake(950, -50, 300, 300);
     
-    
-    //logoLayer.contents = (id) logoImage.CGImage;
-    //logoLayer.contents = (__bridge id)(logoImage.CGImage);
-    //logoLayer.contentsRect = CGRectMake(40, 500, 100, 100);
-    //logoLayer.contentsRect = CGRectMake(5, 25, 57, 57);
-    //logoLayer.contentsRect = CGRectMake(0, 0, 0.5, 0.5);
-    //logoLayer.frame = CGRectMake(5,25,57, 57);
-    
-    
-    
-    
-    //compositionVideoTrack = [mixComposition addMutableTrackWithMediaType:AVMediaTypeVideo preferredTrackID:kCMPersistentTrackID_Invalid];
-    
     // 動画のサイズを取得
     CGSize videoSize = videoTrack.naturalSize;
     
     // コピーライトのCALayerを作成
     CATextLayer *copyrightLayer = [CATextLayer layer];
-    //copyrightLayer.backgroundColor = [UIColor redColor].CGColor;
     copyrightLayer.string = @"Happy_Birthday!!";
     [copyrightLayer setFont:@"Helvetica"];
     copyrightLayer.fontSize = videoSize.height / 6;
     copyrightLayer.wrapped = YES;
-    //copyrightLayer.shadowOpacity = 0.5;
-    //copyrightLayer.position = CGPointMake(0, -100);
-    //copyrightLayer.alignmentMode = kCAAlignmentRight;
     copyrightLayer.bounds = CGRectMake(0, 50, videoSize.width, videoSize.height-50);
     
     
@@ -157,7 +125,6 @@ const float kRecordingFPS = 60.0f;
     parentLayer.frame = CGRectMake(0, 0, videoSize.width, videoSize.height);
     videoLayer.frame  = CGRectMake(0, 0, videoSize.width, videoSize.height);
     [parentLayer addSublayer:videoLayer];
-    //[parentLayer addSublayer:copyrightLayer];
     [parentLayer addSublayer:logoLayer1];
     [parentLayer addSublayer:logoLayer2];
     [parentLayer addSublayer:logoLayer3];

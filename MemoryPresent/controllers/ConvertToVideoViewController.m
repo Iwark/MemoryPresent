@@ -33,8 +33,8 @@
     Animator *animator = [[Animator alloc] init];
     NSURL *url = [animator createVideo:[_images mutableCopy]];
     NSLog(@"%@",url);
-    EditMovie *editMovie = [[EditMovie alloc] init];
-    [editMovie compositeMovieFromUrl:url];
+    //EditMovie *editMovie = [[EditMovie alloc] init];
+    //[editMovie compositeMovieFromUrl:url];
     
 }
 

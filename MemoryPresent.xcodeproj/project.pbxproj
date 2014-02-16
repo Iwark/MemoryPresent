@@ -44,6 +44,13 @@
 		97503D6D18B0562E00EC0ABF /* UIImage+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = 97503D6C18B0562E00EC0ABF /* UIImage+Extras.m */; };
 		97503D6F18B056C100EC0ABF /* birthday.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 97503D6E18B056C100EC0ABF /* birthday.mp3 */; };
 		97503D7218B0591300EC0ABF /* EditMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = 97503D7118B0591300EC0ABF /* EditMovie.m */; };
+		97503D7A18B05D3700EC0ABF /* balloon1.png in Resources */ = {isa = PBXBuildFile; fileRef = 97503D7318B05D3700EC0ABF /* balloon1.png */; };
+		97503D7B18B05D3700EC0ABF /* cake1.png in Resources */ = {isa = PBXBuildFile; fileRef = 97503D7418B05D3700EC0ABF /* cake1.png */; };
+		97503D7C18B05D3700EC0ABF /* cupcake.png in Resources */ = {isa = PBXBuildFile; fileRef = 97503D7518B05D3700EC0ABF /* cupcake.png */; };
+		97503D7D18B05D3700EC0ABF /* happybday.png in Resources */ = {isa = PBXBuildFile; fileRef = 97503D7618B05D3700EC0ABF /* happybday.png */; };
+		97503D7E18B05D3700EC0ABF /* hat.png in Resources */ = {isa = PBXBuildFile; fileRef = 97503D7718B05D3700EC0ABF /* hat.png */; };
+		97503D7F18B05D3700EC0ABF /* presentbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 97503D7818B05D3700EC0ABF /* presentbox.png */; };
+		97503D8018B05D3700EC0ABF /* way2.png in Resources */ = {isa = PBXBuildFile; fileRef = 97503D7918B05D3700EC0ABF /* way2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +118,13 @@
 		97503D6E18B056C100EC0ABF /* birthday.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = birthday.mp3; sourceTree = "<group>"; };
 		97503D7018B0591300EC0ABF /* EditMovie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditMovie.h; sourceTree = "<group>"; };
 		97503D7118B0591300EC0ABF /* EditMovie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditMovie.m; sourceTree = "<group>"; };
+		97503D7318B05D3700EC0ABF /* balloon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = balloon1.png; sourceTree = "<group>"; };
+		97503D7418B05D3700EC0ABF /* cake1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cake1.png; sourceTree = "<group>"; };
+		97503D7518B05D3700EC0ABF /* cupcake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cupcake.png; sourceTree = "<group>"; };
+		97503D7618B05D3700EC0ABF /* happybday.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = happybday.png; sourceTree = "<group>"; };
+		97503D7718B05D3700EC0ABF /* hat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hat.png; sourceTree = "<group>"; };
+		97503D7818B05D3700EC0ABF /* presentbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = presentbox.png; sourceTree = "<group>"; };
+		97503D7918B05D3700EC0ABF /* way2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = way2.png; sourceTree = "<group>"; };
 		D94130787FC946478D1A2F6F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -251,6 +265,13 @@
 		970EDAD518AF260A0018D549 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				97503D7318B05D3700EC0ABF /* balloon1.png */,
+				97503D7418B05D3700EC0ABF /* cake1.png */,
+				97503D7518B05D3700EC0ABF /* cupcake.png */,
+				97503D7618B05D3700EC0ABF /* happybday.png */,
+				97503D7718B05D3700EC0ABF /* hat.png */,
+				97503D7818B05D3700EC0ABF /* presentbox.png */,
+				97503D7918B05D3700EC0ABF /* way2.png */,
 			);
 			path = images;
 			sourceTree = "<group>";
@@ -366,10 +387,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				970EDAAE18AF20E50018D549 /* Main_iPad.storyboard in Resources */,
+				97503D8018B05D3700EC0ABF /* way2.png in Resources */,
+				97503D7B18B05D3700EC0ABF /* cake1.png in Resources */,
 				97503D6F18B056C100EC0ABF /* birthday.mp3 in Resources */,
+				97503D7A18B05D3700EC0ABF /* balloon1.png in Resources */,
 				970EDAE918AFAB5F0018D549 /* haarcascade_frontalface_alt2.xml in Resources */,
 				970EDAB318AF20E50018D549 /* Images.xcassets in Resources */,
+				97503D7D18B05D3700EC0ABF /* happybday.png in Resources */,
+				97503D7F18B05D3700EC0ABF /* presentbox.png in Resources */,
+				97503D7E18B05D3700EC0ABF /* hat.png in Resources */,
 				970EDAAB18AF20E50018D549 /* Main_iPhone.storyboard in Resources */,
+				97503D7C18B05D3700EC0ABF /* cupcake.png in Resources */,
 				970EDAA218AF20E50018D549 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
