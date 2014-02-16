@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <opencv2/highgui/cap_ios.h>
+#import "FaceDetector.h"
 #import "FacebookSDK.h"
+#import "CustomFaceRecognizer.h"
+#import "OpenCVData.h"
+#import "PictureListViewController.h"
 
 @interface AddMovieViewController : UIViewController <FBFriendPickerDelegate,  UISearchBarDelegate>{
     

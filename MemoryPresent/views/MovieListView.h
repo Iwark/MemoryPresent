@@ -7,8 +7,6 @@
 //
 
 #import "MGScrollView.h"
-
-#import "MGScrollView.h"
 #import "MGTableBox.h"
 #import "MGLineStyled.h"
 

@@ -9,7 +9,14 @@
 #import "AddMovieViewController.h"
 
 @interface AddMovieViewController ()
-
+{
+    NSMutableArray *images;
+    int counter;
+    CustomFaceRecognizer *faceRecognizer;
+    int numPicsTaken;
+    int userid;
+    FaceDetector *faceDetector;
+}
 @end
 
 @implementation AddMovieViewController
@@ -27,9 +34,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    [SVProgressHUD showWithStatus:@"Facebook連携なう"];
-    
+    images = [[NSMutableArray alloc] init];
+    counter = 0;
     [self selectFriendsButtonAction];
+    faceRecognizer = [[CustomFaceRecognizer alloc] init];
+    faceDetector = [[FaceDetector alloc] init];
 }
 
 - (void)didReceiveMemoryWarning
@@ -77,7 +86,6 @@
     [self presentViewController:friendPickerController
                        animated:YES
                      completion:^(void){
-                         [SVProgressHUD dismiss];
                          [self addSearchBarToFriendPickerView];
                      }
      ];
@@ -104,6 +112,7 @@
         
         friendNameLabel.text = user.name;
         pictureView.profileID = user.id;
+        
     }
     
     [self handlePickerDone];
@@ -177,6 +186,7 @@
 - (void)getUserPhotos:(id<FBGraphUser>)user{
 	
     /* make the API call */
+    [SVProgressHUD show];
     [FBRequestConnection startWithGraphPath:[NSString stringWithFormat:@"%@/photos", [user id]]
                                  parameters:nil
                                  HTTPMethod:@"GET"
@@ -185,25 +195,68 @@
                                               id result,
                                               NSError *error
                                               ) {
-                              /* handle the result */
-                              //NSLog(@"result = %@",result);
-                              int i = 0;
-                              NSMutableArray *fileURLs = NSMutableArray.new;
-                              NSMutableArray *images = NSMutableArray.new;
-                              UIImage *image;
-                              for (NSDictionary *data in [result objectForKey:@"data"]) {
-                                  //NSLog(@"sourceURL = %@", [data objectForKey:@"source"]);
-                                  fileURLs[i] = [NSURL URLWithString:[data objectForKey:@"source"]];
-                                  NSData *urlData = [NSData dataWithContentsOfURL:[NSURL URLWithString:fileURLs[i]]];
-                                  image = [UIImage imageWithData:urlData];
-                                  images[i] = image;
-                                  //NSLog(@"%@", fileURLs[i]);
-                                  i++;
+                              NSArray *results = [result objectForKey:@"data"];
+                              counter = (int)results.count;
+                              for (NSDictionary *data in results) {
+                                  [self performSelectorInBackground:@selector(createImagesByURL:) withObject:[NSURL URLWithString:[data objectForKey:@"source"]]];
                               }
                               
                           }];
     
 }
 
+- (void)createImagesByURL:(NSURL *)url
+{
+    NSData *data = [NSData dataWithContentsOfURL:url];
+    UIImage *image = [[UIImage alloc] initWithData:data];
+    [images addObject:image];
+    counter--;
+    if(counter <= 0){
+        // finished loading images
+        NSLog(@"%@ %d",images,(int)images.count);
+        
+        //新規パーソン
+        userid = [faceRecognizer newPersonWithName:friendNameLabel.text];
+        
+        numPicsTaken = 0;
+        for(UIImage *image in images){
+            
+            cv::Mat cvimage = [OpenCVData cvMatFromUIImage:image usingColorSpace:CV_RGBA2BGRA];
+            
+            const std::vector<cv::Rect> faces = [faceDetector facesFromImage:cvimage];
+            
+            if ([self learnFace:faces forImage:cvimage]) {
+                
+                numPicsTaken++;
+                NSLog(@"Processed %d of %d", numPicsTaken, images.count);
+            }
+            
+        }
+        if(numPicsTaken == 0) NSLog(@"ERROR!!!");
+        [SVProgressHUD dismiss];
+    }
+}
+
+- (bool)learnFace:(const std::vector<cv::Rect> &)faces forImage:(cv::Mat&)image
+{
+    if (faces.size() != 1) {
+        return NO;
+    }
+    
+    // We only care about the first face
+    cv::Rect face = faces[0];
+    
+    // Learn it
+    [faceRecognizer learnFace:face ofPersonID:userid fromImage:image];
+    
+    
+    return YES;
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    PictureListViewController *plvc = segue.destinationViewController;
+    plvc.images = images;
+}
 
 @end
