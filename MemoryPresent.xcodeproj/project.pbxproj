@@ -42,7 +42,7 @@
 		970EDB0A18AFB73C0018D549 /* MovieListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 970EDB0918AFB73C0018D549 /* MovieListView.m */; };
 		97503D5818AFBB6B00EC0ABF /* AddMovieViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 97503D5718AFBB6B00EC0ABF /* AddMovieViewController.mm */; };
 		97503D6118B0235E00EC0ABF /* PictureListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97503D6018B0235E00EC0ABF /* PictureListView.m */; };
-		97503D6418B0257A00EC0ABF /* PictureListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97503D6318B0257A00EC0ABF /* PictureListViewController.m */; };
+		97503D6418B0257A00EC0ABF /* PictureListViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 97503D6318B0257A00EC0ABF /* PictureListViewController.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,7 +108,7 @@
 		97503D5F18B0235E00EC0ABF /* PictureListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureListView.h; sourceTree = "<group>"; };
 		97503D6018B0235E00EC0ABF /* PictureListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureListView.m; sourceTree = "<group>"; };
 		97503D6218B0257A00EC0ABF /* PictureListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureListViewController.h; sourceTree = "<group>"; };
-		97503D6318B0257A00EC0ABF /* PictureListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureListViewController.m; sourceTree = "<group>"; };
+		97503D6318B0257A00EC0ABF /* PictureListViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PictureListViewController.mm; sourceTree = "<group>"; };
 		D94130787FC946478D1A2F6F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -238,7 +238,7 @@
 				97503D5618AFBB6B00EC0ABF /* AddMovieViewController.h */,
 				97503D5718AFBB6B00EC0ABF /* AddMovieViewController.mm */,
 				97503D6218B0257A00EC0ABF /* PictureListViewController.h */,
-				97503D6318B0257A00EC0ABF /* PictureListViewController.m */,
+				97503D6318B0257A00EC0ABF /* PictureListViewController.mm */,
 				970EDAEA18AFABAA0018D549 /* RecognizeViewController.h */,
 				970EDAEB18AFABAA0018D549 /* RecognizeViewController.mm */,
 				970EDAEC18AFABAA0018D549 /* PeopleViewController.h */,
@@ -418,7 +418,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97503D6418B0257A00EC0ABF /* PictureListViewController.m in Sources */,
+				97503D6418B0257A00EC0ABF /* PictureListViewController.mm in Sources */,
 				970EDAE318AFAB400018D549 /* FaceDetector.mm in Sources */,
 				970EDAE818AFAB5F0018D549 /* OpenCVData.mm in Sources */,
 				970EDAF318AFABAA0018D549 /* PeopleViewController.mm in Sources */,

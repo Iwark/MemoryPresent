@@ -194,7 +194,11 @@
             sqlite3_bind_int(statement, 1, predictedLabel);
             
             if (sqlite3_step(statement) != SQLITE_DONE) {
-                personName = [NSString stringWithUTF8String:(char *)sqlite3_column_text(statement, 0)];
+                if(sqlite3_column_text(statement, 0)){
+                    personName = [NSString stringWithUTF8String:(char *)sqlite3_column_text(statement, 0)];
+                }else{
+                    personName = @"";
+                }
             }
         }
         

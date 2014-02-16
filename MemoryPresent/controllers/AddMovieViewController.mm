@@ -16,6 +16,7 @@
     int numPicsTaken;
     int userid;
     FaceDetector *faceDetector;
+    BOOL modelAvailable;
 }
 @end
 
@@ -37,8 +38,10 @@
     images = [[NSMutableArray alloc] init];
     counter = 0;
     [self selectFriendsButtonAction];
-    faceRecognizer = [[CustomFaceRecognizer alloc] init];
+    faceRecognizer = [[CustomFaceRecognizer alloc] initWithEigenFaceRecognizer];
     faceDetector = [[FaceDetector alloc] init];
+    modelAvailable = [faceRecognizer trainModel];
+    NSLog(@"%d",modelAvailable);
 }
 
 - (void)didReceiveMemoryWarning
@@ -209,7 +212,7 @@
 {
     NSData *data = [NSData dataWithContentsOfURL:url];
     UIImage *image = [[UIImage alloc] initWithData:data];
-    [images addObject:image];
+    if(image) [images addObject:image];
     counter--;
     if(counter <= 0){
         // finished loading images
@@ -256,6 +259,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     PictureListViewController *plvc = segue.destinationViewController;
+    plvc.name = friendNameLabel.text;
     plvc.images = images;
 }
 

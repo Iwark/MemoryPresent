@@ -35,7 +35,7 @@
     
     c = [Const sharedConstant];
     
-    self.navigationItem.title = @"MooPre";
+    self.navigationItem.title = @"MemoPre";
     [UINavigationBar appearance].titleTextAttributes = @{NSForegroundColorAttributeName: [UIColor whiteColor]};
     self.navigationController.navigationBar.tintColor = NAVBAR_COLOR;
     self.navigationController.navigationBar.barStyle = UIBarStyleBlackTranslucent;
