@@ -40,6 +40,9 @@
 		97503D6118B0235E00EC0ABF /* PictureListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97503D6018B0235E00EC0ABF /* PictureListView.m */; };
 		97503D6418B0257A00EC0ABF /* PictureListViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 97503D6318B0257A00EC0ABF /* PictureListViewController.mm */; };
 		97503D6718B0530E00EC0ABF /* ConvertToVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97503D6618B0530E00EC0ABF /* ConvertToVideoViewController.m */; };
+		97503D6A18B0555800EC0ABF /* Animator.m in Sources */ = {isa = PBXBuildFile; fileRef = 97503D6918B0555800EC0ABF /* Animator.m */; };
+		97503D6D18B0562E00EC0ABF /* UIImage+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = 97503D6C18B0562E00EC0ABF /* UIImage+Extras.m */; };
+		97503D6F18B056C100EC0ABF /* birthday.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 97503D6E18B056C100EC0ABF /* birthday.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +103,11 @@
 		97503D6318B0257A00EC0ABF /* PictureListViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PictureListViewController.mm; sourceTree = "<group>"; };
 		97503D6518B0530E00EC0ABF /* ConvertToVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConvertToVideoViewController.h; sourceTree = "<group>"; };
 		97503D6618B0530E00EC0ABF /* ConvertToVideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConvertToVideoViewController.m; sourceTree = "<group>"; };
+		97503D6818B0555800EC0ABF /* Animator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Animator.h; sourceTree = "<group>"; };
+		97503D6918B0555800EC0ABF /* Animator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Animator.m; sourceTree = "<group>"; };
+		97503D6B18B0562E00EC0ABF /* UIImage+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extras.h"; sourceTree = "<group>"; };
+		97503D6C18B0562E00EC0ABF /* UIImage+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extras.m"; sourceTree = "<group>"; };
+		97503D6E18B056C100EC0ABF /* birthday.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = birthday.mp3; sourceTree = "<group>"; };
 		D94130787FC946478D1A2F6F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -194,6 +202,7 @@
 		970EDA9E18AF20E50018D549 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				97503D6E18B056C100EC0ABF /* birthday.mp3 */,
 				970EDAE718AFAB5F0018D549 /* haarcascade_frontalface_alt2.xml */,
 				970EDA9F18AF20E50018D549 /* MemoryPresent-Info.plist */,
 				970EDAA018AF20E50018D549 /* InfoPlist.strings */,
@@ -252,6 +261,10 @@
 				970EDAE018AFAB400018D549 /* FaceDetector.mm */,
 				970EDAE118AFAB400018D549 /* CustomFaceRecognizer.h */,
 				970EDAE218AFAB400018D549 /* CustomFaceRecognizer.mm */,
+				97503D6818B0555800EC0ABF /* Animator.h */,
+				97503D6918B0555800EC0ABF /* Animator.m */,
+				97503D6B18B0562E00EC0ABF /* UIImage+Extras.h */,
+				97503D6C18B0562E00EC0ABF /* UIImage+Extras.m */,
 			);
 			path = libs;
 			sourceTree = "<group>";
@@ -348,6 +361,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				970EDAAE18AF20E50018D549 /* Main_iPad.storyboard in Resources */,
+				97503D6F18B056C100EC0ABF /* birthday.mp3 in Resources */,
 				970EDAE918AFAB5F0018D549 /* haarcascade_frontalface_alt2.xml in Resources */,
 				970EDAB318AF20E50018D549 /* Images.xcassets in Resources */,
 				970EDAAB18AF20E50018D549 /* Main_iPhone.storyboard in Resources */,
@@ -410,8 +424,10 @@
 				97503D6118B0235E00EC0ABF /* PictureListView.m in Sources */,
 				970EDAE418AFAB400018D549 /* CustomFaceRecognizer.mm in Sources */,
 				970EDB0418AFB5F90018D549 /* ViewController.m in Sources */,
+				97503D6A18B0555800EC0ABF /* Animator.m in Sources */,
 				970EDB0718AFB63E0018D549 /* Const.m in Sources */,
 				97503D5818AFBB6B00EC0ABF /* AddMovieViewController.mm in Sources */,
+				97503D6D18B0562E00EC0ABF /* UIImage+Extras.m in Sources */,
 				970EDAA818AF20E50018D549 /* AppDelegate.m in Sources */,
 				970EDAA418AF20E50018D549 /* main.m in Sources */,
 				970EDB0A18AFB73C0018D549 /* MovieListView.m in Sources */,

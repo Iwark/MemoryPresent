@@ -7,6 +7,7 @@
 //
 
 #import "ConvertToVideoViewController.h"
+#import "Animator.h"
 
 @interface ConvertToVideoViewController ()
 
@@ -28,7 +29,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    
+    Animator *animator = [[Animator alloc] init];
+    [animator createVideo:[_images mutableCopy]];
     
 }
 
