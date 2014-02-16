@@ -89,7 +89,7 @@ const float kRecordingFPS = 60.0f;
     logoLayer2.opacity = 0.9;
     
     logoLayer3.contents = (__bridge id)(happy3.CGImage);
-    logoLayer3.frame = CGRectMake(200, 400, 400, 400);
+    logoLayer3.frame = CGRectMake(150, 400, 400, 400);
     logoLayer3.opacity = 0.9;
     
     logoLayer4.contents = (__bridge id)(happy4.CGImage);
@@ -97,7 +97,7 @@ const float kRecordingFPS = 60.0f;
     logoLayer4.opacity = 0.9;
     
     logoLayer5.contents = (__bridge id)(happy5.CGImage);
-    logoLayer5.frame = CGRectMake(50, 400, 300, 300);
+    logoLayer5.frame = CGRectMake(-50, 450, 300, 300);
     
     logoLayer6.contents = (__bridge id)(happy6.CGImage);
     logoLayer6.frame = CGRectMake(350, 10, 600, 600);
