@@ -199,8 +199,22 @@
                               counter = (int)results.count;
                               for (NSDictionary *data in results) {
                                   [self performSelectorInBackground:@selector(createImagesByURL:) withObject:[NSURL URLWithString:[data objectForKey:@"source"]]];
+                                  
+                                  NSLog(@"sourceURL = %@", data[@"source"]);
+                                  
+                                  NSArray *tagsData = data[@"tags"][@"data"];
+                                  int numberOfTagged = tagsData.count;
+                                  for (int i = 0; i < numberOfTagged; i++) {
+                                      
+                                      if ([data[@"tags"][@"data"][i][@"name"] isEqualToString:user.name]) {
+                                          NSLog(@"user's name = %@",data[@"tags"][@"data"][i][@"name"]);
+                                          NSLog(@"x = %@",data[@"tags"][@"data"][i][@"x"]);
+                                          NSLog(@"y = %@",data[@"tags"][@"data"][i][@"y"]);
+                                      }
+                                  }
+
+
                               }
-                              
                           }];
     
 }
