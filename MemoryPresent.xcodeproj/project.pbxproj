@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3131017118B057B100CD07D7 /* EditMovie.m in Sources */ = {isa = PBXBuildFile; fileRef = 3131017018B057B100CD07D7 /* EditMovie.m */; };
 		42E5D014CB4B43379B140F23 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 741CCB1DB8714081951D7873 /* libPods.a */; };
 		4A55666C18AFF10000795317 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A55666B18AFF10000795317 /* opencv2.framework */; };
 		970EDA9818AF20E50018D549 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 970EDA9718AF20E50018D549 /* Foundation.framework */; };
@@ -56,6 +57,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3131016F18B057B100CD07D7 /* EditMovie.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditMovie.h; sourceTree = "<group>"; };
+		3131017018B057B100CD07D7 /* EditMovie.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditMovie.m; sourceTree = "<group>"; };
 		4A55666B18AFF10000795317 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 		741CCB1DB8714081951D7873 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		970EDA9418AF20E50018D549 /* MemoryPresent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoryPresent.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -267,6 +270,8 @@
 				970EDAE018AFAB400018D549 /* FaceDetector.mm */,
 				970EDAE118AFAB400018D549 /* CustomFaceRecognizer.h */,
 				970EDAE218AFAB400018D549 /* CustomFaceRecognizer.mm */,
+				3131016F18B057B100CD07D7 /* EditMovie.h */,
+				3131017018B057B100CD07D7 /* EditMovie.m */,
 			);
 			path = libs;
 			sourceTree = "<group>";
@@ -430,6 +435,7 @@
 				970EDAA818AF20E50018D549 /* AppDelegate.m in Sources */,
 				970EDAA418AF20E50018D549 /* main.m in Sources */,
 				970EDAF518AFABAA0018D549 /* CaptureImagesViewController.mm in Sources */,
+				3131017118B057B100CD07D7 /* EditMovie.m in Sources */,
 				970EDB0A18AFB73C0018D549 /* MovieListView.m in Sources */,
 				970EDAF218AFABAA0018D549 /* RecognizeViewController.mm in Sources */,
 				970EDAF418AFABAA0018D549 /* NewPersonViewController.mm in Sources */,
