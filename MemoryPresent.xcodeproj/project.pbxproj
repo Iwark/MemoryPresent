@@ -15,6 +15,8 @@
 		313101A818B05CE300CD07D7 /* hat.png in Resources */ = {isa = PBXBuildFile; fileRef = 313101A118B05CE300CD07D7 /* hat.png */; };
 		313101A918B05CE300CD07D7 /* presentbox.png in Resources */ = {isa = PBXBuildFile; fileRef = 313101A218B05CE300CD07D7 /* presentbox.png */; };
 		313101AA18B05CE300CD07D7 /* way2.png in Resources */ = {isa = PBXBuildFile; fileRef = 313101A318B05CE300CD07D7 /* way2.png */; };
+		313101BA18B0604C00CD07D7 /* way.png in Resources */ = {isa = PBXBuildFile; fileRef = 313101B918B0604C00CD07D7 /* way.png */; };
+		313101BC18B0609A00CD07D7 /* cupcake-birthday.png in Resources */ = {isa = PBXBuildFile; fileRef = 313101BB18B0609A00CD07D7 /* cupcake-birthday.png */; };
 		42E5D014CB4B43379B140F23 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 741CCB1DB8714081951D7873 /* libPods.a */; };
 		4A55666C18AFF10000795317 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A55666B18AFF10000795317 /* opencv2.framework */; };
 		970EDA9818AF20E50018D549 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 970EDA9718AF20E50018D549 /* Foundation.framework */; };
@@ -73,6 +75,8 @@
 		313101A118B05CE300CD07D7 /* hat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hat.png; sourceTree = "<group>"; };
 		313101A218B05CE300CD07D7 /* presentbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = presentbox.png; sourceTree = "<group>"; };
 		313101A318B05CE300CD07D7 /* way2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = way2.png; sourceTree = "<group>"; };
+		313101B918B0604C00CD07D7 /* way.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = way.png; sourceTree = "<group>"; };
+		313101BB18B0609A00CD07D7 /* cupcake-birthday.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cupcake-birthday.png"; sourceTree = "<group>"; };
 		4A55666B18AFF10000795317 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 		741CCB1DB8714081951D7873 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		970EDA9418AF20E50018D549 /* MemoryPresent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoryPresent.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -164,6 +168,8 @@
 		3131019C18B05CE300CD07D7 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				313101B918B0604C00CD07D7 /* way.png */,
+				313101BB18B0609A00CD07D7 /* cupcake-birthday.png */,
 				3131019D18B05CE300CD07D7 /* balloon1.png */,
 				3131019E18B05CE300CD07D7 /* cake1.png */,
 				3131019F18B05CE300CD07D7 /* cupcake.png */,
@@ -392,12 +398,14 @@
 				970EDAAE18AF20E50018D549 /* Main_iPad.storyboard in Resources */,
 				313101AA18B05CE300CD07D7 /* way2.png in Resources */,
 				313101A618B05CE300CD07D7 /* cupcake.png in Resources */,
+				313101BA18B0604C00CD07D7 /* way.png in Resources */,
 				313101A418B05CE300CD07D7 /* balloon1.png in Resources */,
 				970EDAE918AFAB5F0018D549 /* haarcascade_frontalface_alt2.xml in Resources */,
 				313101A818B05CE300CD07D7 /* hat.png in Resources */,
 				313101A718B05CE300CD07D7 /* happybday.png in Resources */,
 				313101A918B05CE300CD07D7 /* presentbox.png in Resources */,
 				970EDAB318AF20E50018D549 /* Images.xcassets in Resources */,
+				313101BC18B0609A00CD07D7 /* cupcake-birthday.png in Resources */,
 				970EDAAB18AF20E50018D549 /* Main_iPhone.storyboard in Resources */,
 				970EDAA218AF20E50018D549 /* InfoPlist.strings in Resources */,
 			);
